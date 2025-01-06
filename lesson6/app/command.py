@@ -3,8 +3,6 @@ from aiogram import Router, types
 
 router = Router()
 
-
-
 @router.message(Command("about"))
 async def about(message:types.Message):
     await message.answer("Команда о нас")
